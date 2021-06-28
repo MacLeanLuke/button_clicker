@@ -4,7 +4,11 @@ var liked = document.querySelector("#liked")
 
 
 function toggle(element){
-    element.innerHTML = "Logout"
+    if (element.innerText == 'Login') {
+        element.innerText = 'Logout';
+    } else {
+        element.innerText = 'Login';
+    }
 }
 
 function remove(element){
