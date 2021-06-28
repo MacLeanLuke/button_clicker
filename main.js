@@ -1,6 +1,9 @@
 var login = document.querySelector("#login")
 var addDefinition = document.querySelector("#add-definition")
 var liked = document.querySelector("#liked")
+var likesCount = 13
+
+liked.innerHTML = `${likesCount} likes`
 
 
 function toggle(element){
@@ -16,6 +19,8 @@ function remove(element){
 }
 
 function likey(){
+    likesCount++
+    liked.innerHTML = `${likesCount} likes`
     alert("Ninja was liked")
 }
 
